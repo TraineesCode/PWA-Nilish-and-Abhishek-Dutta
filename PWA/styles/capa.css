@@ -1,0 +1,955 @@
+
+@media screen and (max-width: 1440px) and (min-width: 800px)
+{
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.submit{
+    display:none;
+    font-family:'aaarghnormal',Arial,sans-serif;
+    margin-left: 50%;
+}
+
+.quizContainer{
+    display:none;
+    font-family:'aaarghnormal',Arial,sans-serif;
+    font-size:15px;
+    margin-left: 25%;
+}
+ol{    
+    list-style-type: none;
+}
+
+#quiz input {
+    vertical-align: middle;
+}
+#instruction{
+  display:none;
+  border: 2px black solid;
+ width: 50%;
+ height:auto;
+}
+
+#inst_next{
+   margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+
+#ulinst{
+  display: inline-block;
+  text-align:left;
+}
+
+#quiz ol {
+   margin: 0 0 10px 20px;
+}
+
+#quiz ol li {
+   margin: 0 0 20px 0;
+}
+
+#quiz ol li div {
+   padding: 4px 0;
+}
+
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
+}
+.body{
+    background-color:#e6f1ff
+}
+
+.button {
+  display: inline-block;
+  border-radius: 360px;
+  background-color: #4d88ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  width:300px;
+  max-width: 450px;
+  max-height:120px;
+  cursor: pointer;
+  outline:none;
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button span {  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.finalsubmit{
+  display:none;
+   margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+
+.finalsubmit:disabled{
+   opacity: 0.6;
+    cursor: not-allowed;
+
+}
+#register{
+  display:block;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  margin:auto;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  font-size:13pt;
+}
+.Login{
+  display:block;
+  margin-top: 50px;
+  border:2px inset black;
+  max-width:300px;
+  border-radius: 10px;
+}
+.Signup{
+  display:none;
+  margin-top: 50px;
+  border:2px inset black;
+  max-width:300px;
+  border-radius: 10px;
+}
+
+.form-group{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.btn.btn-success{
+  margin-top:0px;
+  margin-bottom:20px;
+  outline: none !important;
+  width: 50%;
+  font-size: 18px;
+}
+
+.form-control{
+  max-width: 200px;
+}
+
+.wrapper{
+    font-family:'aaarghnormal',Arial,sans-serif;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top:50px;    
+}
+.bg-primary{        
+    display:inline-block;
+    width: 100%;
+    height: 10%;
+}
+
+#title{
+    font-family:'aaarghnormal',Arial,sans-serif;
+    color:white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('Aaargh-webfont.eot');
+    src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aaargh-webfont.woff') format('woff'),
+         url('Aaargh-webfont.ttf') format('truetype'),
+         url('Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Skills and Levels CSS*/
+
+.next{
+  display:block;
+  margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+.next:disabled{
+   opacity: 0.6;
+    cursor: not-allowed;
+
+}
+
+.navigate{
+  margin-left: 25%;
+}
+
+.s{
+    display:none;
+}
+
+.l{ 
+    display:none;
+}
+.ques{
+  display:none;
+}
+.level{
+  display:block;
+   width:250px;
+  height: 50px;
+  background-color:skyblue;
+  color:white;
+  border-radius:4px;
+  padding:10px 13px 10px 20px;
+  font-size:15pt;  
+  margin-top:100px;
+  margin-bottom:10px; 
+}
+.skills{
+  display:block;
+  width:150px;
+  height: 50px;
+  background-color:skyblue;
+  color:white;
+  border-radius:4px;
+  padding:10px 15px 10px 20px;
+  font-size:15pt;
+  margin-top:50px;
+  margin-bottom:10px;
+}
+
+.submit_s{
+  display:block;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  font-size:13pt;
+}
+
+.submit_l{
+  display:block;
+  outline: none;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  border:none;
+  border-radius:3px;
+  font-size:13pt;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: visible; 
+}
+.funkyradios div {
+  clear: both;
+  overflow: visible; 
+}
+
+
+.labels {
+  width: 200px;
+  display:block;
+  font-size:13pt;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+.labels1 {
+  width: 150px;
+display:block;
+  margin-top:200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradios input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradios input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 2.25em;
+  margin-top: 7px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradios input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+.funkyradios input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: 0em;
+  color: #333;
+  background-color: #ccc;
+}
+
+
+.funkyradios-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+
+
+/* modal background*/
+#continuebtn{  
+  text-align:center;
+  display:block;
+  width:200px;
+  height: 40px;
+  background-color:orange;
+  margin-top:20px;
+  border:none;
+  border-radius:3px;
+  font-size:18px;
+  outline: none;
+}
+
+#finalScore{
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height:100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin:auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color:#5cb85c;
+    color:white;
+}
+
+.modal-body {
+  text-align:center;
+  padding: 2px 16px;}
+
+}
+/*Code for loader below*/
+#loader {
+    display:none;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;    
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#h_img{
+  display:none;
+}
+
+#s_img{
+  width: 70%;
+  height: 70%;
+  border:none;
+}
+
+
+@media screen and (max-width: 799px) and (min-width: 0px)
+{
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.submit{
+    display:none;
+    font-family:'aaarghnormal',Arial,sans-serif;
+    margin-left: 50%;
+}
+#instruction{
+  display:none;
+  border: 2px black solid;
+ width: 90%;
+ height:auto;
+}
+#inst_next{
+   margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+#ulinst{
+  display: inline-block;
+  text-align:left;
+}
+.quizContainer{
+    display:none;
+    font-family:'aaarghnormal',Arial,sans-serif;
+    font-size:15px;
+    margin-left: 1%;
+}
+ol{    
+    list-style-type: none;
+}
+
+#quiz input {
+    vertical-align: middle;
+}
+
+#quiz ol {
+   margin: 0 0 10px 20px;
+}
+
+#quiz ol li {
+   margin: 0 0 20px 0;
+}
+
+#quiz ol li div {
+   padding: 4px 0;
+}
+
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
+}
+.body{
+    background-color:#e6f1ff
+}
+
+.button {
+  display: inline-block;
+  border-radius: 360px;
+  background-color: #4d88ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  width:300px;
+  max-width: 450px;
+  max-height:120px;
+  cursor: pointer;
+  outline:none;
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.button span {  
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.finalsubmit{
+  display:none;
+   margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+
+.finalsubmit:disabled{
+   opacity: 0.6;
+    cursor: not-allowed;
+
+}
+#register{
+  display:block;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  margin: auto;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  font-size:13pt;
+}
+.Login{
+  display:block;
+  margin-top: 50px;
+  border:2px inset black;
+  max-width:300px;
+  border-radius: 10px;
+}
+.Signup{
+  display:none;
+  margin-top: 50px;
+  border:2px inset black;
+  max-width:300px;
+  border-radius: 10px;
+}
+
+.form-group{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.btn.btn-success{
+  margin-top:0px;
+  margin-bottom:20px;
+  outline: none !important;
+  width: 35%;
+  font-size: 17px;
+}
+
+.form-control{
+  max-width: 200px;
+}
+
+.wrapper{
+    font-family:'aaarghnormal',Arial,sans-serif;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top:50px;    
+}
+.bg-primary{        
+    display:inline-block;
+    width: 100%;
+    height: 10%;
+}
+
+#title{
+    font-family:'aaarghnormal',Arial,sans-serif;
+    color:white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('Aaargh-webfont.eot');
+    src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aaargh-webfont.woff') format('woff'),
+         url('Aaargh-webfont.ttf') format('truetype'),
+         url('Aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Skills and Levels CSS*/
+
+.next{
+  display:block;
+  margin-bottom: 15px;
+  background-color:orange;
+  height:40px;
+  width:100px;
+  border:none;
+  border-radius:6px;
+  outline: none;
+}
+.next:disabled{
+   opacity: 0.6;
+    cursor: not-allowed;
+
+}
+
+.navigate{
+  margin-left: 25%;
+}
+
+.s{
+    display:none;
+}
+
+.l{ 
+    display:none;
+}
+.ques{
+  display:none;
+}
+.level{
+  display:block;
+   width:250px;
+  height: 50px;
+  background-color:skyblue;
+  color:white;
+  border-radius:4px;
+  padding:10px 13px 10px 20px;
+  font-size:15pt;  
+  margin-top:100px;
+  margin-bottom:10px; 
+}
+.skills{
+  display:block;
+  width:150px;
+  height: 50px;
+  background-color:skyblue;
+  color:white;
+  border-radius:4px;
+  padding:10px 15px 10px 20px;
+  font-size:15pt;
+  margin-top:50px;
+  margin-bottom:10px;
+}
+
+.submit_s{
+  display:block;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  font-size:13pt;
+}
+
+.submit_l{
+  display:block;
+  outline: none;
+  width:120px;
+  height: 35px;
+  background-color:orange;
+  margin-top:20px;
+  border:none;
+  border-radius:3px;
+  font-size:13pt;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: visible; 
+}
+.funkyradios div {
+  clear: both;
+  overflow: visible; 
+}
+
+
+.labels {
+  width: 200px;
+  display:block;
+  font-size:13pt;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+.labels1 {
+  width: 150px;
+display:block;
+  margin-top:200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradios input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradios input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 2.25em;
+  margin-top: 7px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradios input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+.funkyradios input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: 0em;
+  color: #333;
+  background-color: #ccc;
+}
+
+
+.funkyradios-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+
+
+/* modal background*/
+#continuebtn{  
+  text-align:center;
+  display:block;
+  width:150px;
+  height: 40px;
+  background-color:orange;
+  margin-top:25px;
+  border:none;
+  border-radius:3px;
+  font-size:18px;
+  outline: none;
+}
+
+#finalScore{
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height:100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin:auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 340px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color:#5cb85c;
+    color:white;
+}
+
+.modal-header h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.modal-body {
+  text-align:center;
+  padding: 2px 16px;}
+
+}
+/*Code for loader below*/
+#loader {
+    display:none;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;    
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#h_img{
+  display:none;
+}
+
+#s_img{
+  width:70%;
+  height:70%;
+  border:none;
+}
+
+
+  

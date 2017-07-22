@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capability Test PWA</title>
+   <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="styles/capa.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <script type="text/javascript" src="scripts/capa.js" async></script>
+
+
+  
+</head>
+<body>
+    <div class="bg-primary">
+      <h1 id="title">Capability Test PWA</h1>
+    </div>
+  <center>
+    <div class="Login">
+       <h1> Login</h1>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text" class="form-control" id="uname">
+        <span id="s" style="float:right; color:red; "> </span>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd"> <span id="p" style="float:right; color:red; "> </span>
+      </div>
+      </br>
+      <button class="btn btn-success" onClick="validateLogin()">Login</button>
+    </div>
+
+    <div class="Signup"> 
+      <h1> SignUp</h1>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text" class="form-control" id="username">
+        <span id="un" style="float:right; color:red; "> </span>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="password"> <span id="ps" style="float:right; color:red; "> </span>
+      </div>
+       <div class="form-group">
+        <label for="pwd">Re-enter Password:</label>
+        <input type="password" class="form-control" id="re-enter_password"> <span id="rp" style="float:right; color:red; "> </span>
+      </div>
+      </br>
+      <button class="btn btn-success" onClick="validateSignup()">Submit</button>
+    </div>
+  </center>
+  <div class="wrapper">
+    <input type="button" value="Signup" id="register" onClick="signup()"/>
+  </div>
+  <center>
+  <div id="instruction">
+       <h3> Instructions for the Game</h3>
+       <center>
+       <ul id="ulinst">
+           <li> User can select one or more skills from available skills. </li>
+           <li> At first, only the beginner level of each skill is unlocked . User have to obtain full marks in order to 
+                unlock the next level. </li>
+           <li> Each correct question will award you 4 marks and each incorrect question will deduct 1 mark from your score.</li> 
+           <li> User has to select atleast one option in order to proceed further. </li>
+           <li> User cannot change the selected option once submitted, so choose your option wisely.</li>
+         </ul>
+          </center>
+         <input type="button" id="inst_next" value="Next" onClick="Process_Instruction()" /> 
+  </div>
+      </center>
+<center>
+    <div class="s">
+    <span class="skills"> Select Skills </span>
+    <div class="funkyradio">          
+    </div>
+    <input type="submit" value="submit" class="submit_s" id="submit_s" onclick="ProcessSkillsPage()" />
+</div>
+</center>
+<center>
+    <div class="l">
+    </div> 
+</center>
+  <div class="quizContainer" id="quizcontainer">
+       <ol class="question_container">
+       </ol>
+       <!--<input type="button"  value="Previous" onclick="showPrevious()" />-->
+       <div class = "navigate">
+          <input type="button" class="next" value="Next" onclick="showNext()" />
+          <input type="button" class="finalsubmit" value="Submit" onclick="ProcessQuestions()" />
+       </div>    
+  </div>
+           
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>You Scored....</h2>
+    </div>
+    <div class="modal-body">
+      <p id ="finalScore"></p>
+      <center><input type="button" id="continuebtn"value="Play Again" onclick="hideScore()" /></center>
+      <center><input type="button" id="continuebtn"value="Logout" onclick="logout()" /></center>
+
+    </div>  
+  </div>
+</div>
+		    <center><div id="loader"></div></center>
+
+</body>
+</html>
+
